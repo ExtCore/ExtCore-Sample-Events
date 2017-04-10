@@ -6,11 +6,16 @@ using ExtensionA.Events;
 
 namespace ExtensionB
 {
-  public class SomeActionEventHandler : ISomeActionEventHandler
+  public class SomeActionEventHandler1 : ISomeActionEventHandler
   {
+    public int Priority { get { return 1000; } }
+
     public void HandleEvent(string argument)
     {
-      File.WriteAllText(@"C:\<Path to the project>\ExtCore-Sample-Events\WebApplication\log.txt", argument);
+      File.AppendAllText(
+        @"C:\<Path to the project>\ExtCore-Sample-Events\WebApplication\log.txt",
+        "Event handler 1: " + argument + "\r\n"
+      );
     }
   }
 }
