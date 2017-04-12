@@ -6,13 +6,13 @@
 
 [ExtCore](https://github.com/ExtCore/ExtCore) is free, open source and cross-platform framework for creating
 modular and extendable web applications based on ASP.NET Core. It is built using the best and the most modern
-tools and languages (Visual Studio 2015, C# etc). Join our team!
+tools and languages (Visual Studio 2017, C# etc). Join our team!
 
 This is the ExtCore framework sample simplest web application.
 
 ## Getting Started
 
-* set the correct project path in the `SomeActionEventHandler` class of the `ExtensionB` project.
+* set the correct project path in the `SomeActionEventHandler1` and `SomeActionEventHandler2` classes of the `ExtensionB` project.
 * rebuild the solution;
 * copy the extensions DLL files into the Extensions folder of the main web application (this folder doesn’t exist by default,
 so you need to create it in the web application root or specify another location in the config.json file; also you may just
@@ -23,15 +23,15 @@ add direct dependencies to the main web application project instead, but it is n
 
 ### Other Samples
 
-* [Full-featured ExtCore 1.1.3 framework sample web application](https://github.com/ExtCore/ExtCore-Sample);
-* [ExtCore Framework 1.1.3 Sample Simplest Web Application](https://github.com/ExtCore/ExtCore-Sample-Simplest);
-* [ExtCore Framework 1.1.3 Sample MVC Web Application](https://github.com/ExtCore/ExtCore-Sample-Mvc);
-* [ExtCore Framework 1.1.3 Sample Web Application That Uses a Database](https://github.com/ExtCore/ExtCore-Sample-Data);
-* [ExtCore Framework 1.1.3 Sample Web Application with Modular UI](https://github.com/ExtCore/ExtCore-Sample-Modular-Ui);
-* [ExtCore Framework 1.1.3 Sample Web Application That Registers a Service Inside the Extension](https://github.com/ExtCore/ExtCore-Sample-Service).
+* [ExtCore framework 1.1.3 sample simplest web application](https://github.com/ExtCore/ExtCore-Sample-Simplest);
+* [ExtCore framework 1.1.3 sample MVC web application](https://github.com/ExtCore/ExtCore-Sample-Mvc);
+* [ExtCore framework 1.1.3 sample web application that uses a database](https://github.com/ExtCore/ExtCore-Sample-Data);
+* [ExtCore framework 1.1.3 sample web application with modular UI](https://github.com/ExtCore/ExtCore-Sample-Modular-Ui);
+* [ExtCore framework 1.1.3 sample web application that registers a service inside the extension](https://github.com/ExtCore/ExtCore-Sample-Service);
+* [ExtCore framework 1.1.3 sample API web application](https://github.com/ExtCore/ExtCore-Sample-Api).
 
 You can also download our [ready to use full-featured sample](http://extcore.net/files/ExtCore-Sample-1.1.3.zip).
-It contains everything you need to run ExtCore-based web application from Visual Studio 2015, including SQLite
+It contains everything you need to run ExtCore-based web application from Visual Studio 2017, including SQLite
 database with the test data.
 
 ### Tutorials
@@ -51,3 +51,5 @@ Sources on GitHub: https://github.com/ExtCore/ExtCore
 Website: http://extcore.net/
 
 Docs: http://docs.extcore.net/
+
+Author: http://sikorsky.pro/
