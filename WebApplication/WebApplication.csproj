@@ -4,16 +4,11 @@
     <Authors>Dmitry Sikorsky</Authors>
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Extensions\" />
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="ExtCore.Events" Version="1.2.0-beta2" />
-    <PackageReference Include="ExtCore.Mvc" Version="1.2.0-beta2" />
-    <PackageReference Include="ExtCore.WebApplication" Version="1.2.0-beta2" />
+    <PackageReference Include="ExtCore.Events" Version="1.2.0" />
+    <PackageReference Include="ExtCore.Mvc" Version="1.2.0" />
+    <PackageReference Include="ExtCore.WebApplication" Version="1.2.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.1" />
   </ItemGroup>
