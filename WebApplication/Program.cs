@@ -3,6 +3,7 @@
 
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
+using Microsoft.AspNetCore;
 
 namespace WebApplication
 {
@@ -10,14 +11,15 @@ namespace WebApplication
   {
     public static void Main(string[] args)
     {
-      var host = new WebHostBuilder()
+      Program.BuildWebHost(args).Run();
+    }
+
+    public static IWebHost BuildWebHost(string[] args) =>
+      WebHost.CreateDefaultBuilder(args)
         .UseContentRoot(Directory.GetCurrentDirectory())
         .UseKestrel()
         .UseIISIntegration()
         .UseStartup<Startup>()
         .Build();
-
-      host.Run();
-    }
   }
 }
